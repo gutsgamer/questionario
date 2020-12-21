@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvamento de Dados</title>
+    <style>
+    body {
+        background-color:blue;
+        color:white;
+        font:normal 20pt Arial;
+    }
+    section {
+        background: white;
+        color:rgb(9, 95, 95);
+        border-radius: 10px;
+        padding: 15px;
+        width: 712px;
+        margin: auto;
+        box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.363);
+    }
+    footer {
+        color:rgba(255, 250, 250, 0.363)
+    }
+    </style>
+</head>
+<body>
+    <h1 align="center">Perguntas em Confirm e Prompt</h1>
+    <section align="center">
+        <div>Você respondeu todas as perguntas.
+        Este é o fim. Use o "Inspecionar" para ver como fiz a página.
+        </div>
+    </section>
+    <footer align="center">
+        <p>__________________________________________________</p>
+        <P>Criado por Gustavo Lucero</p>
+    </footer>
+    <script>
+        var nome = prompt("Digite seu nome:")
+        prompt("Digite sua idade:")
+        alert("Ok=Sim Cancelar=Não, ok, " + nome)
+        confirm(nome + ", você já estudou JavaScript?")
+        confirm("Você já estudou HTML?")
+        confirm("Você já estudou CSS?")
+        confirm("Você quer algum dia estudar uma dessas linguagens (se você já não estudou)?")
+        confirm("Você acha que HTML, JS e CSS têm alguma ligação?")
+        prompt(nome + ", qual dessas linguagens vocÇe acha que é mais fácil?")
+        alert("Fim do questionário, " + nome)
+    </script>
+</body>
+</html>
